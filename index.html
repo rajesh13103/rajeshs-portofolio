@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajesh Kumar Bomalleeni | Web Developer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+<canvas id="bg-canvas"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">RK<span class="accent">//</span>B</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#participations">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#home" onclick="closeMobile()">Home</a></li>
+    <li><a href="#about" onclick="closeMobile()">About</a></li>
+    <li><a href="#education" onclick="closeMobile()">Education</a></li>
+    <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+    <li><a href="#internship" onclick="closeMobile()">Internship</a></li>
+    <li><a href="#participations" onclick="closeMobile()">Events</a></li>
+    <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-wrap">
+    <div class="hero-left" data-aos>
+      <div class="hero-tag"><span class="tag-line"></span><span id="typing-tag"></span></div>
+      <h1 class="hero-name">RAJESH KUMAR<br><span class="accent">BOMALLEENI</span></h1>
+      <div class="hero-role"><span>&gt;&nbsp;</span><span id="typed-role"></span><span class="cursor-blink">|</span></div>
+      <p class="hero-desc">Building efficient software solutions at the intersection of electronics engineering and web development. Passionate about turning ideas into clean, functional code.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        <!-- Resume button: replace resume.pdf with your actual file -->
+        <a href="resume.pdf.docx" target="_blank" class="btn btn-ghost">
+          <i class="fas fa-file-pdf"></i> View Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="9.58">0</span><span class="stat-label">CGPA</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Skills</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">3rd</span><span class="stat-label">Year B.Tech</span></div>
+      </div>
+    </div>
+
+    <!-- Orbit Profile -->
+    <div class="hero-visual">
+      <div class="orbit-system">
+        <div class="orbit-center">
+          <!-- Profile photo: replace photo.jpg with your actual photo filename -->
+          <div class="profile-photo-wrap" id="profile-wrap">
+            <img id="profile-img" src="photo.jpg.jpeg" alt="Rajesh Kumar Bomalleeni"
+              onerror="this.style.display='none';document.getElementById('profile-placeholder').style.display='flex'">
+            <div class="profile-placeholder" id="profile-placeholder" style="display:none">
+              <i class="fas fa-user"></i>
+              <span>RK</span>
+            </div>
+          </div>
+          <div class="orbit-glow"></div>
+        </div>
+        <!-- Orbiting icons -->
+        <div class="orbit orbit-1">
+          <div class="orbit-icon" style="--clr:#e44d26"><i class="fab fa-html5"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-icon" style="--clr:#264de4"><i class="fab fa-css3-alt"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-icon" style="--clr:#f7df1e"><i class="fab fa-js"></i></div>
+        </div>
+        <div class="orbit orbit-4">
+          <div class="orbit-icon" style="--clr:#3776ab"><i class="fab fa-python"></i></div>
+        </div>
+        <div class="orbit orbit-5">
+          <div class="orbit-icon" style="--clr:#00d4ff"><i class="fas fa-code"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> About</div>
+      <h2 class="section-title">System Profile</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-aos>
+        <p>Hey! I'm <span class="highlight">Rajesh Kumar Bomalleeni</span>, a second-year Electronics & Communication Engineering student with a deep passion for software development and web technologies.</p>
+        <p>I bridge the gap between hardware and software, applying my engineering mindset to build elegant digital solutions. Currently exploring the full web development stack while maintaining a stellar academic record of <span class="highlight">9.58 CGPA</span>.</p>
+        <p>My objective is to leverage my electronics engineering background and strong interest in software development by applying programming, problem-solving, and analytical skills to build efficient software solutions.</p>
+        <div class="about-langs">
+          <span class="lang-badge"><i class="fas fa-language"></i> English</span>
+          <span class="lang-badge"><i class="fas fa-language"></i> Telugu</span>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/" target="_blank" class="soc-btn github" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rajesh-kumar-bomalleeni-b03341366?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="soc-btn linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/rajesh_33__?igsh=djJwem5qYmVlNnh0&utm_source=qr" target="_blank" class="soc-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919391134330" target="_blank" class="soc-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:bomalleenirajeshkumar@gmail.com" class="soc-btn email" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="about-info" data-aos data-aos-delay="200">
+        <div class="info-card animated-card">
+          <div class="info-card-header">
+            <span class="info-card-title"><i class="fas fa-terminal"></i> Personal Data</span>
+            <span class="info-status pulse-dot">● Online</span>
+          </div>
+          <div class="info-rows">
+            <div class="info-row slide-in" style="--d:0.05s"><span class="info-key">Name</span><span class="info-val">Rajesh Kumar Bomalleeni</span></div>
+            <div class="info-row slide-in" style="--d:0.1s"><span class="info-key">Degree</span><span class="info-val">B.Tech ECE (3rd Year)</span></div>
+            <div class="info-row slide-in" style="--d:0.15s"><span class="info-key">CGPA</span><span class="info-val accent">9.58 / 10.0</span></div>
+            <div class="info-row slide-in" style="--d:0.2s"><span class="info-key">College</span><span class="info-val">Aditya College of Engineering</span></div>
+            <div class="info-row slide-in" style="--d:0.25s"><span class="info-key">Location</span><span class="info-val">Madanapalle, AP</span></div>
+            <div class="info-row slide-in" style="--d:0.3s"><span class="info-key">Phone</span><span class="info-val">+91 9391134330</span></div>
+            <div class="info-row slide-in" style="--d:0.35s"><span class="info-key">Email</span><span class="info-val">bomalleenirajeshkumar@gmail.com</span></div>
+            <div class="info-row slide-in" style="--d:0.4s"><span class="info-key">Status</span><span class="info-val green">Available for Opportunities</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Education</div>
+      <h2 class="section-title">Academic Record</h2>
+      <p class="section-sub"><i class="fas fa-hand-pointer"></i> Click any card to view its certificate</p>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card clickable" onclick="openCert('btech-cert.jpeg','B.Tech — Aditya College of Engineering')">
+          <div class="cert-hint"><i class="fas fa-certificate"></i> Click to view certificate</div>
+          <div class="timeline-badge">2024 – Present</div>
+          <div class="timeline-degree">B.Tech — Electronics & Communication Engineering</div>
+          <div class="timeline-school"><i class="fas fa-university"></i> Aditya College of Engineering, Madanapalle</div>
+          <div class="timeline-detail">Currently Pursuing · 3rd Year</div>
+          <div class="score-wrap">
+            <div class="score-label">CGPA: <span class="accent">9.58 / 10</span></div>
+            <div class="score-bar"><div class="score-fill" style="width:0%" data-width="95.8%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card clickable" onclick="openCert('inter-cert.jpg.jpeg','Intermediate — Sri Siddhartha Junior College')">
+          <div class="cert-hint"><i class="fas fa-certificate"></i> Click to view certificate</div>
+          <div class="timeline-badge">Completed</div>
+          <div class="timeline-degree">Intermediate (10+2) — MPC</div>
+          <div class="timeline-school"><i class="fas fa-school"></i> Sri Siddhartha Junior College, Madanapalle</div>
+          <div class="timeline-detail">Board of Intermediate Education, AP</div>
+          <div class="score-wrap">
+            <div class="score-label">Percentage: <span class="accent">90%</span></div>
+            <div class="score-bar"><div class="score-fill" style="width:0%" data-width="90%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card clickable" onclick="openCert('ssc-cert.jpg.jpeg','SSC — Vivekananda Municipal High School')">
+          <div class="cert-hint"><i class="fas fa-certificate"></i> Click to view certificate</div>
+          <div class="timeline-badge">Completed</div>
+          <div class="timeline-degree">Secondary School (SSC / Class X)</div>
+          <div class="timeline-school"><i class="fas fa-school"></i> Vivekananda Municipal High School, Madanapalle</div>
+          <div class="timeline-detail">Board of Secondary Education, AP</div>
+          <div class="score-wrap">
+            <div class="score-label">Percentage: <span class="accent">84%</span></div>
+            <div class="score-bar"><div class="score-fill" style="width:0%" data-width="84%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-sub"><i class="fas fa-hand-pointer"></i> Click any skill to view its certificate</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card clickable" data-aos onclick="openCert('html-cert.jpg.jpeg','HTML Certificate')">
+        <div class="cert-hint"><i class="fas fa-certificate"></i> View Cert</div>
+        <div class="skill-icon"><i class="fab fa-html5" style="color:#e44d26"></i></div>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-level">Markup Language</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="85%"></div></div>
+        <div class="skill-cert-label"><i class="fas fa-award"></i> Certified</div>
+      </div>
+      <div class="skill-card clickable" data-aos onclick="openCert('css-cert.jpeg','CSS Certificate')">
+        <div class="cert-hint"><i class="fas fa-certificate"></i> View Cert</div>
+        <div class="skill-icon"><i class="fab fa-css3-alt" style="color:#264de4"></i></div>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-level">Styling & Layout</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="80%"></div></div>
+        <div class="skill-cert-label"><i class="fas fa-award"></i> Certified</div>
+      </div>
+      <div class="skill-card clickable" data-aos onclick="openCert('js-cert.jpg','JavaScript Certificate')">
+        <div class="cert-hint"><i class="fas fa-certificate"></i> View Cert</div>
+        <div class="skill-icon"><i class="fab fa-js" style="color:#f7df1e"></i></div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level">Programming</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="70%"></div></div>
+        <div class="skill-cert-label"><i class="fas fa-award"></i> On Progress</div>
+      </div>
+      <div class="skill-card clickable" data-aos onclick="openCert('c-cert.jpg.jpeg','C Programming Certificate')">
+        <div class="cert-hint"><i class="fas fa-certificate"></i> View Cert</div>
+        <div class="skill-icon"><i class="fas fa-memory" style="color:#a9c0d4"></i></div>
+        <div class="skill-name">C Programming</div>
+        <div class="skill-level">Systems Language</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="75%"></div></div>
+        <div class="skill-cert-label"><i class="fas fa-award"></i> On Progress</div>
+      </div>
+      <div class="skill-card clickable" data-aos onclick="openCert('python-cert.jpg.jpeg','Python Certificate')">
+        <div class="cert-hint"><i class="fas fa-certificate"></i> View Cert</div>
+        <div class="skill-icon"><i class="fab fa-python" style="color:#3776ab"></i></div>
+        <div class="skill-name">Python</div>
+        <div class="skill-level">Programming</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="72%"></div></div>
+        <div class="skill-cert-label"><i class="fas fa-award"></i> Certified</div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon"><i class="fas fa-brain" style="color:#00ff88"></i></div>
+        <div class="skill-name">Problem Solving</div>
+        <div class="skill-level">Core Skill</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:0%" data-width="90%"></div></div>
+        <div class="skill-cert-label" style="opacity:0.3"><i class="fas fa-infinity"></i> Natural</div>
+      </div>
+    </div>
+    <div class="soft-skills" data-aos>
+      <div class="section-label" style="margin-bottom:1.2rem">Soft Skills</div>
+      <div class="soft-tags">
+        <span class="soft-tag">Good Communication</span>
+        <span class="soft-tag">Team Player</span>
+        <span class="soft-tag">Quick Learner</span>
+        <span class="soft-tag">Analytical Thinking</span>
+        <span class="soft-tag">Time Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Projects</div>
+      <h2 class="section-title">Build Log</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-aos>
+        <div class="project-num">01</div>
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-globe"></i></div>
+          <div class="project-links">
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project-title">Personal Portfolio</div>
+        <div class="project-desc">A responsive personal portfolio website showcasing skills, education, and projects with a dark techy theme and smooth animations.</div>
+        <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+      </div>
+      <div class="project-card project-wip" data-aos>
+        <div class="project-num">02</div>
+        <div class="project-top"><div class="project-icon"><i class="fas fa-code"></i></div></div>
+        <div class="project-title">More Coming Soon</div>
+        <div class="project-desc">Exciting projects currently under active development. Stay tuned for new web and software applications.</div>
+        <div class="project-tags"><span class="ptag ptag-muted">In Progress</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTERNSHIP ===== -->
+<section id="internship" class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Internship</div>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    <div class="internship-empty" data-aos>
+      <div class="empty-icon"><i class="fas fa-briefcase"></i></div>
+      <div class="empty-title">No Internships Yet</div>
+      <div class="empty-sub">My future internships and work experience will appear here.</div>
+      <div class="empty-badge">// - - Coming Soon - - //</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTICIPATIONS ===== -->
+<section id="participations" class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Participations</div>
+      <h2 class="section-title">Events & Activities</h2>
+    </div>
+    <div class="part-grid">
+
+      <!-- Hackathon -->
+      <div class="part-card" data-aos>
+        <div class="part-top">
+          <div class="part-icon-wrap"><i class="fas fa-trophy"></i></div>
+          <div class="part-info">
+            <div class="part-title">Hackathons & Competitions</div>
+            <div class="part-detail">Participated in National-level Department Fest held at MITS deemed to be University</div>
+          </div>
+        </div>
+        <div class="part-actions">
+          <button class="part-btn" onclick="toggleSummary('hack-sum')"><i class="fas fa-align-left"></i> Summary</button>
+          <button class="part-btn cert-btn" onclick="openCert('hackathon1.jpeg','Hackathon Certificate')"><i class="fas fa-certificate"></i> Certificate</button>
+        </div>
+        <div class="part-summary" id="hack-sum">
+          <p>Participated in inter-college hackathon events where teams collaborated to solve real-world problems within time constraints. Demonstrated skills in rapid prototyping, teamwork, and creative problem-solving under pressure.</p>
+        </div>
+      </div>
+
+      <!-- Workshop -->
+      <div class="part-card" data-aos>
+        <div class="part-top">
+          <div class="part-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+          <div class="part-info">
+            <div class="part-title">Workshops & Seminars</div>
+            <div class="part-detail">Participated in Mini Project Expo held at Aditya College of Engineering and Organised by Dept of AI&DS</div>
+          </div>
+        </div>
+        <div class="part-actions">
+          <button class="part-btn" onclick="toggleSummary('work-sum')"><i class="fas fa-align-left"></i> Summary</button>
+          <button class="part-btn cert-btn" onclick="openCert('workshop-cert.jpeg','Workshop Certificate')"><i class="fas fa-certificate"></i> Certificate</button>
+        </div>
+        <div class="part-summary" id="work-sum">
+          <p>Attended hands-on workshops covering web development technologies, including HTML/CSS/JS frameworks. Gained practical exposure to industry tools and best practices through interactive sessions and live coding exercises.</p>
+        </div>
+      </div>
+
+      <!-- Academic -->
+      <div class="part-card" data-aos>
+        <div class="part-top">
+          <div class="part-icon-wrap"><i class="fas fa-university"></i></div>
+          <div class="part-info">
+            <div class="part-title">Academic Activities</div>
+            <div class="part-detail">Active participant in departmental events at Aditya College</div>
+          </div>
+        </div>
+        <div class="part-actions">
+          <button class="part-btn" onclick="toggleSummary('acad-sum')"><i class="fas fa-align-left"></i> Summary</button>
+          <button class="part-btn cert-btn" onclick="openCert('academic-cert.jpeg','Academic Certificate')"><i class="fas fa-certificate"></i> Certificate</button>
+        </div>
+        <div class="part-summary" id="acad-sum">
+          <p>Actively participated in various departmental and college-level academic events including technical symposiums, paper presentations, and cultural activities at Aditya College of Engineering, Madanapalle.</p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="part-card" data-aos>
+        <div class="part-top">
+          <div class="part-icon-wrap"><i class="fas fa-medal"></i></div>
+          <div class="part-info">
+            <div class="part-title">Online Certifications</div>
+            <div class="part-detail">Completed professional online courses and certifications</div>
+          </div>
+        </div>
+        <div class="part-actions">
+          <button class="part-btn" onclick="toggleSummary('cert-sum')"><i class="fas fa-align-left"></i> Summary</button>
+          <button class="part-btn cert-btn" onclick="openCert('extra-cert.jpeg','Online Certification')"><i class="fas fa-certificate"></i> Certificate</button>
+        </div>
+        <div class="part-summary" id="cert-sum">
+          <p>Completed various online courses through platforms like Coursera, NPTEL, and similar platforms covering programming languages, web development, and computer science fundamentals.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-label"> Contact</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Have an opportunity or project in mind? Let's connect!</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info" data-aos>
+        <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-text"><div class="contact-label">Email</div><div class="contact-val">bomalleenirajeshkumar@gmail.com</div></div></div>
+        <div class="contact-card"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-text"><div class="contact-label">Phone</div><div class="contact-val">+91 9391134330</div></div></div>
+        <div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-text"><div class="contact-label">Location</div><div class="contact-val">Madanapalle, Andhra Pradesh</div></div></div>
+        <div class="contact-card"><div class="contact-icon"><i class="fas fa-graduation-cap"></i></div><div class="contact-text"><div class="contact-label">College</div><div class="contact-val">Aditya College of Engineering</div></div></div>
+        <div class="social-row" style="margin-top:1.5rem">
+          <a href="https://github.com/" target="_blank" class="soc-btn github"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" class="soc-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="soc-btn instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919391134330" target="_blank" class="soc-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:bomalleenirajeshkumar@gmail.com" class="soc-btn email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" data-aos data-aos-delay="200">
+        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Enter your name" required></div>
+        <div class="form-group"><label>Your Email</label><input type="email" name="email" placeholder="Enter your email" required></div>
+        <div class="form-group"><label>Subject</label><input type="text" name="subject" placeholder="What's this about?"></div>
+        <div class="form-group"><label>Message</label><textarea rows="5" name="message" placeholder="Write your message..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">RAJESH KUMAR <span class="accent">BOMALLEENI</span></div>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+    <div class="footer-copy">© Rajesh Kumar Bomalleeni · Crafted with code & ambition</div>
+  </div>
+</footer>
+
+<!-- ===== CERT LIGHTBOX (view only) ===== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <div class="lb-title" id="lb-title"></div>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="Certificate">
+      <div class="lb-no-cert" id="lb-no-cert" style="display:none">
+        <i class="fas fa-certificate"></i>
+        <p>Certificate image not found.</p>
+        <small>Place the certificate image in the <code>certs/</code> folder.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
